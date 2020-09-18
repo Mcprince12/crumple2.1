@@ -16,8 +16,8 @@ class Paper{
        
         
         var pos = this.body.position;
-        //ImageMode(RADIUS);
-        image(this.image, pos.x, pos.y, this.width, this.height);
+        imageMode(CENTER);
+        image(this.image, pos.x, pos.y, this.radius, this.radius);
 
         //ellipseMode(RADIUS);
     

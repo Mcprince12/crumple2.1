@@ -28,8 +28,8 @@ function setup() {
 
 	ground1 = new Ground(400, 700, 800, 20);
 	
-	ground2 = new Ground(450, 600, 20, 150);
-	ground3 = new Ground(580, 600, 20, 150);
+	ground2 = new Ground(470, 630, 20, 270);
+	ground3 = new Ground(580, 630, 20, 270);
 
 
 
@@ -43,7 +43,7 @@ function draw() {
   
   background("white");
   paper.display();
-  image(trashImg, 525, 450, 150, 250);
+  
  
 
  
@@ -52,14 +52,15 @@ function draw() {
 
   ground1.display();
   
-  
+  ground2.display();
+  ground3.display();
 
- 
+  image(trashImg, 525, 570, 150, 250);
 }
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper.body, paper.body.position, {x:400, y:-400})
+		Matter.Body.applyForce(paper.body, paper.body.position, {x:400, y:-450})
 	}
 }
 
